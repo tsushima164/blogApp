@@ -1,0 +1,8 @@
+  <div class="contents row" >
+    <%= @texts.each do |text| %>
+      <div class="content_post">
+        <span class="title"><%= text.title %></span>
+        <%= simple_format(text.text) %>
+      </div>
+    <% end %>
+  </div>
